@@ -1,0 +1,32 @@
+import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Products from './components/Products'
+import TopProducts from './components/TopProducts'
+import AOS from 'aos' // Import AOS for animations
+import 'aos/dist/aos.css' // Import AOS styles
+function App() {
+
+  React.useEffect(() => {
+  AOS.init({
+    offset: 100,
+    duration: 800,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+  AOS.refresh();
+  }, []); //we will need to call this function to initialize AOS animations 
+  // and it will be needed for next projects as well
+
+
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Products />
+      <TopProducts />
+    </>
+  )
+}
+
+export default App
