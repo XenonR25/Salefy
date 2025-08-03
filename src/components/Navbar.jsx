@@ -36,7 +36,7 @@ const DropDownlinks = [
 ]
 
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   const [showDropdown, setShowDropdown] = React.useState(false);
 
   // Close dropdown when clicking outside
@@ -52,9 +52,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full shadow-md shadow-purple-200/40 text-gray-800 duration-300 z-40 dark:text-gray-200 dark:shadow-lg dark:shadow-purple-900/40">
+    <div className="fixed top-0 left-0 w-full shadow-md shadow-purple-400/40 text-gray-800 duration-300 z-40 dark:text-gray-200 dark:shadow-purple-900/40">
       {/* upper navbar */}
-      <div className="bg-purple-500/90 py-4 sm:py-1 dark:bg-purple-800/80 dark:bg-opacity-80"> 
+      <div className="bg-purple-500/90 py-2 sm:py-1 dark:bg-purple-800/80 "> 
         <div className="flex justify-between items-center mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center">
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
@@ -89,9 +89,9 @@ const Navbar = () => {
             </div>
 
             {/* order button */}
-            <button onClick={() => alert("Ordering not available")} className="bg-gradient-to-r from-purple-800 to-purple-600 text-white px-4 py-1 rounded-full hover:bg-purple-700 transition-all duration-400 flex items-center gap-5 group dark:text-gray-900 dark:bg-gradient-to-r dark:from-purple-400 dark:to-purple-600 dark:hover:bg-purple-600">
-              <span className="group-hover:block hidden transition-all duration-300">Order</span>
-              <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
+            <button onClick={() => handleOrderPopup()} className="bg-gradient-to-r from-purple-800 to-purple-600 text-white px-4 py-1 rounded-full hover:bg-purple-700 transition-all duration-400 flex items-center gap-5 group dark:text-gray-900 dark:bg-gradient-to-r dark:from-purple-400 dark:to-purple-500 dark:hover:bg-purple-600">
+              <span className="group-hover:block hidden transition-all duration-300 dark:text-white">Order</span>
+              <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer dark:text-gray-300" />
             </button>
             {/* Dark/Light Mode Toggle */}
             <Darkmode/>
@@ -99,7 +99,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* lower navbar */}
-      <div className="flex justify-center items-center bg-white dark:bg-gray-800 dark:text-gray-200">
+      <div className="py-0 flex justify-center items-center bg-white dark:bg-gray-800 dark:text-gray-200">
         <ul className="sm:flex hidden items-center gap-4">
           {Menu.map((data) => (
             <li key={data.id}>

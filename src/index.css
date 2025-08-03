@@ -1,6 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  padding: 0;
-  margin: auto;
+  --background-color: #ffffff;
+  --text-color: #1a202c;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.dark {
+  --background-color: #1a202c;
+  --text-color: #f7fafc;
 }

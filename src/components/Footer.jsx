@@ -8,15 +8,14 @@ import { FaInstagram ,FaLinkedin,FaLocationArrow,FaMobileAlt} from "react-icons/
 const BannerImg = {
   backgroundImage: `url(${Banner})`,
   backgroundSize: "cover",
+  backgroundAttachment: "fixed",
   backgroundPosition: "bottom",
   backgroundRepeat: "no-repeat",
   position: "absolute",
   height: "70%",
   width: "100%",
   opacity: 0.9,
-  borderTopLeftRadius: "0.8rem",
-  borderTopRightRadius: "0.8rem",
-
+  zIndex: -1,
 };
 
 const FooterLinks = [
@@ -28,8 +27,8 @@ const FooterLinks = [
 
 const Footer = () => {
   return (
-    <footer style={BannerImg} className=" text-white py-4">
-      <div className="container mx-auto text-center">
+    <div style={BannerImg} className="relative overflow-hidden m-auto dark:m-auto text-white py-4 dark:bg-gray-900 dark:text-gray-200">
+      <div>
         <div className="grid md:grid-cols-3  pb-30 pt-5">
           <div data-aos="fade-up" data-aos-delay="200" className="py-8 px-4">
             <h1 className="text-2xl sm:text-3xl sm:text-left font-bold mb-4 flex items-center text-justify gap-3">
@@ -94,7 +93,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

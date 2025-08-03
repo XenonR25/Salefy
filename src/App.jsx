@@ -9,9 +9,15 @@ import Testimonial from './components/Testimonial'
 import Footer from './components/Footer'
 import AOS from 'aos' // Import AOS for animations
 import 'aos/dist/aos.css' // Import AOS styles
+import Popup from './components/Popup'
 
 
 function App() {
+  const [OrderPopUp, setOrderPopup] = React.useState(false);
+
+  const handleOrderPopup = () => {
+    setOrderPopup(!OrderPopUp);
+  };
 
   React.useEffect(() => {
   AOS.init({
@@ -27,7 +33,7 @@ function App() {
 
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
-      <Navbar />
+      <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero />
       <Products />
       <TopProducts />
@@ -35,6 +41,8 @@ function App() {
       <Subscribe />
       <Testimonial/>
       <Footer/>
+      <Popup OrderPopUp={OrderPopUp} setOrderPopup={setOrderPopup} />
+      {/* The Popup component is used to show the order confirmation popup */}
     </div>
   )
 }

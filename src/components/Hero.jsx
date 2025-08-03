@@ -52,9 +52,9 @@ const Hero = () => {
   const item = ImageList[current];
 
   return (
-    <div className="relative overflow-hidden rounded-xl min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-900 dark:bg-opacity-80 dark:text-white duration-250 mt-10">
+    <div className="relative overflow-hidden m-auto dark:m-auto min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-900 dark:bg-opacity-80 dark:text-white duration-250 mt-10">
       {/* Background pattern */}
-      <div className="h-[700px] w-[700px] bg-purple-500/40 absolute -top-1/2 right-0 rounded-4xl rotate-45 z-[8]"></div>
+      <div className="h-[700px] w-[700px] bg-purple-500/40 absolute -top-[230px] right-0 rounded-4xl rotate-45 z-[8]"></div>
       <div className="w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Text Section */}

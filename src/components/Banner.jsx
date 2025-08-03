@@ -14,24 +14,24 @@ const Banner = () => {
                     </div>
                     {/* Text details section  */}
                     <div className="flex flex-col justify-center items-start gap-6">
-                        <h1 data-aos="fade-up" className=" text-3xl sm:text-5xl font-bold text-gray-800">Summer Sales upto 70% Off</h1>
-                        <p data-aos="fade-up" className="text-sm text-gray-600 mt-4 tracking-wide leading-5">Don't miss out on our exclusive offers! Also check out our new arrivals.</p>
+                        <h1 data-aos="fade-up" className=" text-3xl sm:text-5xl font-bold text-gray-800 dark:text-gray-200">Summer Sales upto 70% Off</h1>
+                        <p data-aos="fade-up" className="text-sm text-gray-600 mt-4 tracking-wide leading-5 dark:text-gray-300">Don't miss out on our exclusive offers! Also check out our new arrivals.</p>
                         <div className="flex flex-row sm:flex-col  gap-4">
                             <div data-aos="fade-up" className="flex items-center gap-4">
                                 <GrSecure className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-400 dark:bg-violet-600"/>
-                                <p>Quality Products</p>
+                                <p className="dark:text-gray-300">Quality Products</p>
                             </div>
                             <div data-aos="fade-up" className="flex items-center gap-4">
                                 <IoFastFood className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-orange-300 dark:bg-orange-600"/>
-                                <p>Fast Delivery</p>
+                                <p className="dark:text-gray-300">Fast Delivery</p>
                             </div>
                             <div data-aos="fade-up" className="flex items-center gap-4">
                                 <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-green-300 dark:bg-green-700"/>
-                                <p>Easy Payment Method</p>
+                                <p className="dark:text-gray-300">Easy Payment Method</p>
                             </div>
                             <div data-aos="fade-up" className="flex items-center gap-4">
                                 <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-400 dark:bg-yellow-600"/>
-                                <p>Get Offers</p>
+                                <p className="dark:text-gray-300">Get Offers</p>
                             </div>
                         </div>
                     </div>
