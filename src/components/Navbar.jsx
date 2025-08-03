@@ -56,9 +56,9 @@ const Navbar = () => {
       {/* upper navbar */}
       <div className="bg-purple-500/90 py-4 sm:py-1 dark:bg-purple-800/80 dark:bg-opacity-80"> 
         <div className="flex justify-between items-center mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
-          <div>
+          <div className="flex justify-center items-center">
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-              <img src={Logo} alt="Logo.png" className="w-8 dark:border-1 dark:border-gray-800 dark:bg-gray-800 dark:rounded" />
+              <img src={Logo} alt="Logo.png" className="w-10 dark:border-1 dark:border-gray-800 dark:bg-gray-800 dark:rounded bg-gray-300/50 rounded-lg h-10" />
               Salefy
             </a>
           </div>

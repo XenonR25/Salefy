@@ -101,13 +101,13 @@ const Hero = () => {
         <div className="flex justify-center items-center mt-4 space-x-4">
           <button
             onClick={prevSlide}
-            className="px-3 py-1 bg-purple-600 text-white rounded hover:bg-purple-800 transition"
+            className="px-3 py-1 bg-purple-600 text-white rounded-l-lg hover:bg-purple-800 transition focus:ring-2 focus:ring-purple-900 w-[60px]"
           >
             Prev
           </button>
           <button
             onClick={nextSlide}
-            className="px-3 py-1 bg-purple-600 text-white rounded hover:bg-purple-800 transition"
+            className="px-3 py-1 bg-purple-600 text-white rounded-r-lg   hover:bg-purple-800 transition focus:ring-2 focus:ring-purple-900 w-[60px]"
           >
             Next
           </button>

@@ -3,12 +3,12 @@ import React from "react";
 const Subscribe = () => {
     return (
         <div className="bg-gray-100 dark:bg-gray-800 py-12">
-            <div className="container mx-auto px-4">
+            <div data-aos="fade-up" className="container mx-auto px-4">
                 <div className="text-center mb-8">
                     <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Subscribe to Our Newsletter</h2>
                     <p className="text-gray-600 dark:text-gray-300 mt-2">Stay updated with the latest news and exclusive offers.</p>
                 </div>
-                <form className="flex justify-center">
+                <form data-aos="fade-up" data-aos-delay="100" className="flex justify-center">
                     <input
                         type="email"
                         placeholder="Enter your email"
