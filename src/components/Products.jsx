@@ -52,7 +52,7 @@ return (
     <div className="bg-white dark:bg-gray-700">
         <div className="container mx-auto px-4 py-8">
             {/* Header Section */}
-            <div className="text-center my-8 max-w-[500px] mx-auto">
+            <div className="text-center my-8 max-w-[660px] mx-auto">
                     <p data-aos="fade-up" className="text-md text-purple-700 text-center my-2 dark:text-purple-500">Top Selling Products for you</p>
                     <h1 data-aos="fade-up" className="text-3xl font-bold dark:text-white">Products</h1>
                     <p data-aos="fade-up" className="text-sm text-gray-600 mt-4 dark:text-gray-300">
@@ -68,10 +68,10 @@ return (
                         data-aos-delay={product.aosDelay}
                         data-aos-duration="800"
                         key={product.id} className="space-y-3">
-                            <img src={product.img} alt={product.title} className="h-[220px] w-[150px] object-cover rounded-md"/>
+                            <img src={product.img} alt={product.title} className="h-[250px] w-[200px] object-cover rounded-md"/>
                             <div>
                                 <h3 className="font-semibold">{product.title}</h3>
-                                <p className="text-sm text-gray-500">{product.color}</p>
+                                <p className="text-sm text-gray-700">{product.color}</p>
                                 <div className="flex items-center gap-2">
                                     <FaStar className="text-yellow-400"/>
                                     <span>{product.rating}</span>
@@ -79,7 +79,12 @@ return (
                             </div>
                         </div>
                     ))}
-                    
+                    {/* View all button */}
+                    <div data-aos="fade-up" className="col-span-full text-center my-4">
+                        <button className="bg-purple-700 text-white px-4 py-2 rounded-md cursor-pointer  hover:bg-purple-600 transition">
+                            View All Products
+                        </button>
+                    </div>
                 </div>
             </div>
 

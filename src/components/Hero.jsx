@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 // import { useState } from 'react';
-import Image1 from "../assets/Sales.jpg"; // Adjust the path as necessary
-import Image2 from "../assets/shopping.jpg"; // Adjust the path as necessary
-import Image3 from "../assets/Cart.jpg"; // Adjust the path as necessary
+import Image1 from "../assets/Sales.png"; // Adjust the path as necessary
+import Image2 from "../assets/shopping.png"; // Adjust the path as necessary
+import Image3 from "../assets/Cart.png"; // Adjust the path as necessary
 // Removed react-slick and slick-carousel imports for custom slider
 
 const ImageList = [
